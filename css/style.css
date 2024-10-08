@@ -38,6 +38,11 @@ header .logo {
 }
 
 /* Creazione griglia */
+
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
 }
@@ -82,20 +87,20 @@ header .logo {
 
 .span-card.span-sale {
   background-color: red;
-  bottom: 20%;
+  bottom: 20px;
   left: 0;
 }
 .span-card.span-info {
   background-color: rgb(4, 107, 4);
-  bottom: 20%;
-  left: 20%;
+  bottom: 20px;
+  left: 50px;
 }
 .span-heart {
   font-size: 1.3rem;
   color: black;
   background-color: white;
   padding: 0.2em 0.4em 0.1em 0.4em;
-  top: 3%;
+  top: 5px;
   right: 0;
 }
 
@@ -123,7 +128,7 @@ footer {
 footer .row.flex {
   flex-direction: row;
   justify-content: space-between;
-  gap:0;
+  gap: 0;
 }
 
 .footer-col-75 {
@@ -143,7 +148,7 @@ footer ul.flex {
   padding: 10px 0 0 0;
 }
 
-.footer-col-75 li{
+.footer-col-75 li {
   padding-right: 10px;
 }
 
