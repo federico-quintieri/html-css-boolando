@@ -1,12 +1,15 @@
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 img {
   max-width: 100%;
 }
 
+/* Creazione griglia */
 .flex {
   display: flex;
 }
@@ -31,11 +34,37 @@ img {
   min-height: 500px;
 }
 
-/* columns size */
+/* Grandezza colonna */
 .grid-section .col {
   /* 100% della larghezza - 20 px che sono gap fra colonne 10 e fra righe 10, tutto questo / 3 perchè voglio 3 celle per righa */
   width: calc((100% - 20px) / 3);
   /* debug */
   border: 1px solid black;
   min-height: 200px;
+}
+
+/* Style card */
+
+.card .price-red {
+  color: red;
+}
+.card .price-line {
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+.span-card {
+  color: white;
+  padding: 2px 5px 2px 5px;
+}
+
+.span-card.span-sale {
+  background-color: red;
+}
+.span-card.span-info {
+  background-color: rgb(4, 107, 4);
+}
+.span-heart {
+  color: black;
+  background-color: white;
+  padding: 5px;
 }
