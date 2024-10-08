@@ -22,28 +22,20 @@ img {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-
-  /* debug */
-  border: 1px solid black;
 }
 .row {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  /* debug */
-  min-height: 500px;
 }
 
 /* Grandezza colonna */
 .grid-section .col {
   /* 100% della larghezza - 20 px che sono gap fra colonne 10 e fra righe 10, tutto questo / 3 perchè voglio 3 celle per righa */
   width: calc((100% - 20px) / 3);
-  /* debug */
-  border: 1px solid black;
-  min-height: 200px;
 }
 
-/* Style card */
+/* Positioning */
 
 .card .price-red {
   color: red;
@@ -54,17 +46,43 @@ img {
 }
 .span-card {
   color: white;
-  padding: 2px 5px 2px 5px;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
 }
 
 .span-card.span-sale {
   background-color: red;
+  bottom: 20%;
+  left: 0;
 }
 .span-card.span-info {
   background-color: rgb(4, 107, 4);
+  bottom: 20%;
+  left: 20%;
 }
 .span-heart {
+  font-size: 1.3rem;
   color: black;
   background-color: white;
-  padding: 5px;
+  padding: 0.2em 0.4em 0.1em 0.4em;
+  top: 3%;
+  right: 0;
+}
+
+/* Hover rules */
+.card {
+  position: relative;
+}
+
+.card-img-hover {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.card:hover .card-img-hover {
+  z-index: 1;
 }
