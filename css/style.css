@@ -143,6 +143,10 @@ footer ul.flex {
   padding: 10px 0 0 0;
 }
 
+.footer-col-75 li{
+  padding-right: 10px;
+}
+
 .footer-col-75 ul.flex {
   justify-content: flex-start;
   align-items: flex-end;
